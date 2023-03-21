@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* a nice font that uses a user's built in font */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    text-align: center;
+    padding: 15px;
+    border-bottom: 2px solid #333;
+    margin-bottom: 0px;
+}
+
+.guess {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    display: grid;
+    margin: 10px auto;
+    max-width: 290px;
+    width: 100%;
+    column-gap: 5px;
+    row-gap: 5px;
+}
+
+.guess-letter {
+    height: 45px;
+    width: 45px;
+    font-size: 30px;
+    text-transform: uppercase;
+    border: 3px solid #ccc;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.correct {
+    background-color: darkgreen;
+    color: white;
+}
+
+.close {
+    background-color: goldenrod;
+    color: white;
+}
+
+.wrong {
+    background-color: #888;
+    color: white;
+}
